@@ -46,3 +46,39 @@ console.log("2")
 }
 
 computerGrade(87);
+
+function login(username, password) {
+
+    if (username === "justins") {
+        console.log("welcome user");
+    } else {
+        console.log("invalid Login Credential");
+    }
+
+}
+
+login("justin", 1234);
+
+function ticketPricce(Age){
+    if (Age < 18){
+        if(Age < 5){
+
+
+     console.log("Ticket: Free");
+
+      }else{
+
+   console.log("Ticket: Child price");
+        }
+
+    }else{
+        if (Age >=60){
+            console.log("Ticket: Sentor Discount");
+                }else{
+                    console.log("Ticket: Adult Price");
+        }
+
+    }
+}
+
+ticketPricce(20);
