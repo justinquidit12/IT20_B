@@ -81,4 +81,4 @@ function ticketPricce(Age){
     }
 }
 
-ticketPricce(20);
+ticketPricce(70);
