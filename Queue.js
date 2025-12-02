@@ -20,6 +20,25 @@ class Queue{
 
     }
     is_empty(){
-        return this.function > yhis.rearIndex;
+        return this.function > this.rearIndex;
     }
 
+    front(){
+        //correcyion statement
+        if(this.is_empty()) return null;
+        return this.date[this.frontIndex];
+       
+    }
+    size(){
+        return this.rearIndex - this.frontIndex +1
+
+    }
+
+    dequeue(){
+        //correction
+        if(this.is_empty()) return null;
+        const value = this.data[this.frontIndex];
+        delete this.data[this.frontIndex];
+        return value;
+    }
+    }
